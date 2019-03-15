@@ -1,0 +1,319 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>README</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;
+border-bottom: solid 1px #eee;  
+}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+a:hover{color: #1b438d;}
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+:not(pre) > code{display:inline-block;text-indent:0em;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;padding: 8px 0px;}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+figcaption{text-align:center;}
+/* PrismJS 1.14.0
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #657b83; /* base00 */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fdf6e3; /* base3 */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1; /* base1 */
+}
+
+.token.punctuation {
+  color: #586e75; /* base01 */
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #268bd2; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198; /* cyan */
+}
+
+.token.entity {
+  color: #657b83; /* base00 */
+  background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900; /* green */
+}
+
+.token.function,
+.token.class-name {
+  color: #b58900; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16; /* orange */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+
+</style>
+
+<style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<ol>
+<li><p>打包app</p></li>
+<li><p>签名</p></li>
+<li><p>生成xml文件</p></li>
+</ol>
+
+<p>步骤2，3见github README.md文件</p>
+
+<p>【<a href="https://github.com/jiangfei84/ElitechLog-Update%E3%80%91">https://github.com/jiangfei84/ElitechLog-Update】</a></p>
+
+<ol>
+<li>上传xml文件到github</li>
+</ol>
+
+<p>4.1 打开网址 <a href="https://github.com/jiangfei84/ElitechLog-Update/releases">https://github.com/jiangfei84/ElitechLog-Update/releases</a></p>
+
+<p>4.2 点击2.0右边编辑按钮<br/>
+<img src="https://upload-images.jianshu.io/upload_images/1126761-6306de2834ba9563.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="E2BFB543-9428-482C-986F-5A8192188C20.png"/></p>
+
+<p>4.3 如图<br/>
+<img src="https://upload-images.jianshu.io/upload_images/1126761-79696e74135e0c49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="81CBF836-DF7B-4E53-A429-2E749F0A49D4.png"/></p>
+
+<p>4.4复制两个地址<br/>
+dmg url : <a href="https://github.com/jiangfei84/ElitechLog-Update/releases/download/2.0/ElitechLog.dmg">https://github.com/jiangfei84/ElitechLog-Update/releases/download/2.0/ElitechLog.dmg</a></p>
+
+<p>xml url: <a href="https://github.com/jiangfei84/ElitechLog-Update/releases/download/2.0/ElitechLog.xml">https://github.com/jiangfei84/ElitechLog-Update/releases/download/2.0/ElitechLog.xml</a></p>
+
+<p>这两个地址是固定死的，按照上面的操作来<br/>
+dmg url是新版本的下载地址<br/>
+xml url是程序info.plist提前配置好的地址<br/>
+以后有新的版本3.0，4.0也最好点击编辑2.0这个里面，a按照4.3，删除老版本，上传新版本即可<br/>
+<img src="https://upload-images.jianshu.io/upload_images/1126761-0a610bc6da8a2157.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="0FAD092A-2FB9-4C9A-B018-326F418ED0C4.png"/></p>
+
+<p>4.4 xml说明</p>
+
+<p>dmg url要填入xml中 </p>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/1126761-a1ddb33696b15f15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="32B2A979-480C-494D-AED1-EED5B08E3A62.png"/></p>
+
+<p>其中 channel 中</p>
+
+<p>title 是工程名字；<br/>
+link 是本xml 链接地址；<br/>
+description 是跟新描述，将出现在更新面板中；<br/>
+pubDate 是发布日期 ；<br/>
+sparkle:dsaSignature 后面跟的是第五步生成的数字签名；<br/>
+enclosure url 后面是 安装包地址；<br/>
+sparkle:version 后面是安装包的版本；<br/>
+length=“436264” 指更新包的大小，上传上去前用 终端 ls -al 命令可查看；<br/>
+type=“application/octet-stream” 是下载类型，使用afn 的同学可能会了解，一般不用修改。</p>
+
+<p>具体说明参考链接<a href="https://blog.csdn.net/lovechris00/article/details/80247987">https://blog.csdn.net/lovechris00/article/details/80247987</a></p>
+
+</div></body>
+
+</html>
